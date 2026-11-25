@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Birthday Party – A1 Role-Play</title>
+<style>
+:root{--bg:#fdf6ee;--card:#fff;--ink:#2b2433;--mute:#6d6478;--acc:#e0527a;--acc2:#fbe3ea;--ok:#1f8a5b;--okbg:#dff5ea;--no:#c0392b;--nobg:#fde4e1;--line:#eadfd2;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1824;--card:#2a2333;--ink:#f3edf7;--mute:#b3a8c0;--acc:#ff7aa2;--acc2:#4a2a39;--ok:#6fe0aa;--okbg:#1c3a2d;--no:#ff8f82;--nobg:#4a2522;--line:#3d3349;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1d1824;--card:#2a2333;--ink:#f3edf7;--mute:#b3a8c0;--acc:#ff7aa2;--acc2:#4a2a39;--ok:#6fe0aa;--okbg:#1c3a2d;--no:#ff8f82;--nobg:#4a2522;--line:#3d3349;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:640px;margin:0 auto;padding:20px 16px 40px}
+h1{font-size:1.4rem;margin:0 0 4px}
+.sub{color:var(--mute);font-size:.9rem;margin:0 0 14px}
+.bar{height:8px;background:var(--line);border-radius:8px;overflow:hidden;margin-bottom:18px}
+.bar i{display:block;height:100%;width:0;background:var(--acc);transition:width .3s}
+.scene{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.who{display:flex;gap:12px;align-items:flex-start}
+.av{font-size:2.2rem;line-height:1}
+.bub{background:var(--acc2);border-radius:4px 16px 16px 16px;padding:12px 14px;flex:1}
+.bub b{display:block;font-size:.8rem;color:var(--mute);font-weight:600}
+.say{margin-top:2px}
+button{font:inherit;color:inherit;cursor:pointer}
+.snd{margin-top:8px;border:1px solid var(--acc);background:transparent;color:var(--acc);border-radius:20px;padding:4px 12px;font-size:.85rem}
+.ask{margin:16px 0 10px;font-weight:600}
+.opts{display:grid;gap:8px}
+.opt{text-align:left;background:var(--card);border:2px solid var(--line);border-radius:12px;padding:12px 14px}
+.opt:hover:not(:disabled){border-color:var(--acc)}
+.opt.ok{border-color:var(--ok);background:var(--okbg)}
+.opt.no{border-color:var(--no);background:var(--nobg)}
+.fb{margin-top:14px;padding:12px 14px;border-radius:12px;background:var(--acc2);font-size:.95rem}
+.next{margin-top:14px;width:100%;background:var(--acc);color:#fff;border:0;border-radius:12px;padding:12px;font-weight:700}
+.end{text-align:center}
+.end .big{font-size:3rem}
+.orow{display:flex;gap:8px;align-items:stretch}
+.orow .opt{flex:1}
+.sp{border:2px solid var(--line);background:var(--card);border-radius:12px;padding:0 12px;cursor:pointer;font:inherit}
+.sn{cursor:pointer;border-bottom:1px dotted var(--acc)}
+.sn::after{content:" 🔊";font-size:.8em}
+.notes{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-top:14px;padding:4px 14px;font-size:.92rem}
+.notes summary{cursor:pointer;font-weight:700;padding:8px 0}
+.notes p{margin:4px 0 10px}
+.notes code{background:var(--acc2);border-radius:6px;padding:1px 6px;font:inherit}
+.nt{width:100%;border-collapse:collapse;margin-bottom:10px}
+.place{font-size:.85rem;color:var(--mute);margin-bottom:12px;padding-bottom:8px;border-bottom:1px dashed var(--line)}
+.nt td,.nt th{border:1px solid var(--line);padding:4px 8px;text-align:left}
+@media (max-width:420px){body{font-size:17px}}
+</style>
+</head>
+<body>
+<main>
+<h1>🎂 The Birthday Party</h1>
+<p class="sub">You are at a party. Talk to Vivian and her friends!</p>
+<div class="bar"><i id="pb"></i></div>
+<div class="scene" id="sc"></div>
+<details class="notes"><summary>📖 Lesson 2.3: When is your birthday?</summary>
+<p>🔊 Tap any sentence to hear it.</p><table class="nt"><tr><th>Asking</th><th>Saying</th><th>Wishing</th></tr><tr><td>How old is he?</td><td>She’s eight.<br>He’s three years old.</td><td>Happy birthday!</td></tr><tr><td>When’s your birthday?<br>When’s her birthday?</td><td>His party is on March 29.<br>Her birthday is April 2.</td><td>Say “Happy birthday!” from me.</td></tr></table>
+<p><b>Months:</b> January, February, March, April, May, June, July, August, September, October, November, December.</p>
+<p><b>Dates:</b> 1 first · 2 second · 3 third · 4 fourth · 5 fifth · 6 sixth · 7 seventh · 8 eighth · 9 ninth · 10 tenth · 11 eleventh · 12 twelfth · 13 thirteenth … 19 nineteenth · 20 twentieth · 21 twenty-first · 22 twenty-second · 30 thirtieth · 31 thirty-first</p>
+<p><b>Numbers:</b> 13 thirTEEN / 30 THIRty · 14 fourTEEN / 40 FORty · 15 fifTEEN / 50 FIFty · 16 sixTEEN / 60 SIXty · 17 sevenTEEN / 70 SEVenty · 18 eighTEEN / 80 EIGHty · 19 nineTEEN / 90 NINEty</p>
+<p><b>Correcting yourself:</b> <code>No, sorry. May eighth.</code> or <code>Sorry, I mean …</code></p></details>
+<details class="notes"><summary>📖 Lesson 2.4: Here’s my band</summary>
+<p><b>Prepositions of place:</b> in (in Seattle) · between (between Nuwa and me) · next to (next to me) · on the left / on the right</p>
+<p><b>Describing people:</b> boring, cool, friendly, funny, interesting, shy, smart</p>
+<p><b>Short forms:</b> Here’s = Here is · She’s = She is · It’s = It is · I’m = I am · What’s = What is · When’s = When is</p>
+<p><b>Writing with “and”:</b> connect words (<code>interesting and smart</code>) or two sentences (<code>We’re four college students in Seattle, and we’re in a band.</code>)</p>
+<p><b>Accuracy:</b> after a preposition use <code>me</code>, not <code>I</code>: Guy is next to me ✓</p></details>
+<details class="notes"><summary>📖 Lesson 2.5: True for me</summary>
+<p><b>Discuss:</b> Hello. / Hi. · My name is … · True for me. · Not true for me. · Really? (for surprise) · Goodbye.</p>
+<p><b>Present:</b> (Name) is the same. · (Name) is different.</p>
+<p><b>Prepare:</b> My mom is (nationality). My dad is (age). My grandmother is (name). My grandfather is from (city). My best friend is (personality). My birthday is in (month).</p></details>
+</main>
+<script>
+var S=[
+{em:"👩",who:"Vivian",say:"Hi! Welcome to the party! This is my son, Carlos.",ask:"Ask about Carlos’s age.",o:["How old is he?","When is he old?","What old is he?"],ok:0,tip:"Ask age with “How old is …?”"},
+{em:"👩",who:"Vivian",say:"He’s three years old.",ask:"Now ask about his birthday.",o:["When’s his birthday?","How old’s his birthday?","What’s his old?"],ok:0,tip:"Ask a birthday with “When’s …birthday?”"},
+{em:"👩",who:"Vivian",say:"And when’s your birthday?",ask:"Your birthday is June 4. What do you say?",o:["It’s June fourth.","It’s June four.","It’s June four-th."],ok:0,tip:"Dates use ordinal numbers: first, second, third, fourth …"},
+{em:"👧",who:"Miranda",say:"Hi! I’m Miranda. It’s my birthday today!",ask:"What do you say to Miranda?",o:["Happy birthday!","Good birthday!","Nice birthday day!"],ok:0,tip:"We say “Happy birthday!”"},
+{em:"👩",who:"Vivian",say:"Oh, and when’s your sister’s birthday?",ask:"You say “May seventh.” But it’s May eighth. Correct yourself!",o:["No, sorry. May eighth.","May seventh. May eighth.","No, sorry, I’m May eighth old."],ok:0,tip:"To correct yourself: “No, sorry …” + the correct word."},
+{em:"🧑",who:"Lucas",say:"My brother is thirty.",listen:1,ask:"Listen. Which number do you hear?",o:["13","30","40"],ok:1,tip:"thirTEEN: stress at the end. THIRty: stress at the start."},
+{em:"🎸",who:"Isabel",say:"Look at my band! Guy is in the middle.",ask:"Say where Guy is.",o:["Guy is between Nuwa and me.","Guy is between Nuwa and I.","Guy is in Nuwa and me."],ok:0,tip:"After a preposition, use “me”, not “I”."},
+{em:"🧑",who:"Lucas",say:"Miranda’s birthday is in April. Carlos’s birthday is in March.",ask:"Which one is the fourth month of the year?",o:["April","March","June"],ok:0,tip:"January, February, March, April, May, June …"},
+{em:"👩",who:"Vivian",say:"Come to my family dinner too! It’s on the twenty-second.",ask:"How do you write the date 22?",o:["twenty-second","twenty-two","twenty-twoth"],ok:0,tip:"21 twenty-first · 22 twenty-second · 31 thirty-first."},
+{em:"👩",who:"Vivian",say:"This is Miranda. She’s eight.",ask:"What is “She’s”?",o:["She is","She has","She are"],ok:0,tip:"Short forms: She’s = She is · He’s = He is · It’s = It is."},
+{em:"👩",who:"Vivian",say:"His party is on March 29.",ask:"Complete: “His party is ___ March 29.” and “His birthday is ___ March.”",o:["on … in","in … on","at … at"],ok:0,tip:"Use “on” with a full date and “in” with a month."},
+{em:"🧑",who:"Lucas",say:"My grandfather is fifty.",listen:1,ask:"Listen. Which number do you hear?",o:["15","50","60"],ok:1,tip:"fifTEEN: stress at the end. FIFty: stress at the start."},
+{em:"🎸",who:"Isabel",say:"Joshua is on the right. Nuwa is on the left.",ask:"Where is Nuwa?",o:["She’s on the left.","She’s in left.","She’s next left."],ok:0,tip:"Use: on the left · on the right · between · next to · in (city)."},
+{em:"🎸",who:"Isabel",say:"Nuwa is Chinese. She’s very interesting and smart.",ask:"Which words describe Nuwa?",o:["interesting and smart","boring and shy","funny and cool"],ok:0,tip:"Joshua is friendly and funny. Guy is shy."},
+{em:"✍️",who:"Writing",say:"Write a post about your band photo.",ask:"Connect two sentences with “and”.",o:["We’re students, and we’re in a band.","We’re students and, we’re in band.","We’re students we and in a band."],ok:0,tip:"Use “and” to connect words or to make one long sentence."},
+{em:"👩",who:"Vivian",say:"My mom is Brazilian.",ask:"Is it the same for you? Answer Vivian.",o:["True for me.","Not true for me."],any:1,tip:"Both are correct! Say what is true for you."}
+];
+var O=[0,1,10,8,7,3,9,2,4,5,11,6,12,13,15,14];S=O.map(function(k){return S[k]});
+var P=["🚪 At the door · You arrive at Vivian’s house.","🚪 At the door · Vivian is happy to see you.","🎈 Living room · Vivian talks about the party.","🎈 Living room · Vivian invites you to a family dinner.","🛋️ Sofa · Lucas talks about the family birthdays.","🎂 Cake table · It’s Miranda’s big day!","🎂 Cake table · Vivian introduces Miranda.","🍰 Cake table · Vivian asks about you.","🍰 Cake table · Oops, a mistake!","🍹 Kitchen · Lucas talks about his family.","🍹 Kitchen · More family ages.","📸 Photo wall · Isabel shows her band photo.","📸 Photo wall · Who is who?","📸 Photo wall · Isabel talks about her friends.","🪑 Dinner table · Everyone talks about their family.","📱 Your phone · You post your party photo online."];
+var i=0,pts=0,sc=document.getElementById("sc"),pb=document.getElementById("pb");
+function speak(t){try{speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(t);u.lang="en-US";u.rate=.85;speechSynthesis.speak(u)}catch(e){}}
+function show(){
+ var s=S[i];pb.style.width=(i/S.length*100)+"%";
+ var h='<div class="place">'+P[i]+'</div><div class="who"><div class="av">'+s.em+'</div><div class="bub"><b>'+s.who+'</b>'+
+  (s.listen?'<div class="say">🔊 Press play and listen.</div>':'<div class="say">'+s.say+'</div>')+
+  '<button class="snd" id="pl">🔊 Listen</button></div></div>'+
+  '<div class="ask">'+s.ask+'</div><div class="opts" id="op"></div><div id="fb"></div>';
+ sc.innerHTML=h;
+ document.getElementById("pl").onclick=function(){speak(s.say)};
+ var op=document.getElementById("op");
+ s.o.forEach(function(t,k){var w=document.createElement("div");w.className="orow";var b=document.createElement("button");b.className="opt";b.textContent=t;b.onclick=function(){pick(k,b)};var p=document.createElement("button");p.className="sp";p.textContent="🔊";p.setAttribute("aria-label","Listen");p.onclick=function(){speak(t)};w.appendChild(b);w.appendChild(p);op.appendChild(w)});
+}
+function pick(k,b){
+ var s=S[i],good=s.any||k===s.ok;
+ var all=document.querySelectorAll(".opt");
+ all.forEach(function(x){x.disabled=true});
+ b.classList.add(good?"ok":"no");
+ if(!good){all[s.ok].classList.add("ok")}else{pts++}
+ var last=i===S.length-1;speak(s.o[s.any?k:s.ok]);
+ document.getElementById("fb").innerHTML='<div class="fb">'+(good?"✅ Great! ":"❌ Not quite. ")+s.tip+'</div><button class="next" id="nx">'+(last?"Finish":"Next →")+'</button>';
+ if(s.listen){document.querySelector(".say").textContent=s.say}
+ document.getElementById("nx").onclick=function(){i++;i<S.length?show():done()};
+}
+function done(){
+ pb.style.width="100%";
+ var m=pts>=S.length*.85?"Amazing! You’re a party star!":pts>=S.length*.6?"Good job! One more try?":"Nice try! Play again and listen carefully.";
+ sc.innerHTML='<div class="end"><div class="big">🎉</div><h2>'+pts+' / '+S.length+'</h2><p>'+m+'</p><button class="next" id="rs">Play again</button></div>';
+ document.getElementById("rs").onclick=function(){i=0;pts=0;show()};
+}
+document.querySelectorAll(".notes td").forEach(function(td){td.innerHTML=td.innerHTML.split("<br>").map(function(x){return '<span class="sn">'+x+'</span>'}).join("<br>")});
+document.querySelectorAll(".notes code").forEach(function(c){c.classList.add("sn")});
+document.querySelectorAll(".sn").forEach(function(e){e.onclick=function(){speak(e.textContent)}});
+function intro(){pb.style.width="0";sc.innerHTML='<div class="end"><div class="big">🏠</div><h2>You’re invited!</h2><p>You are <b>Sam</b>. Your friend Lucas invites you to Carlos’s birthday party at Vivian’s house in Seattle. You meet Vivian, Miranda, Isabel and her band. Speak English with everyone!</p><button class="next" id="go">Start the party</button></div>';document.getElementById("go").onclick=show}
+intro();
+</script>
+</body>
+</html>
